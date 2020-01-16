@@ -1,0 +1,104 @@
+﻿<Window x:Class="BloodBank.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BloodBank"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="750" WindowStyle="None" AllowsTransparency="True" ResizeMode="NoResize" Background="Transparent" MouseDown="Window_MouseDown" WindowStartupLocation="CenterScreen">
+
+    <Window.Resources>
+        <!--Style for buttons-->
+        <Style TargetType="Button">
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Cursor" Value="Hand"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+
+
+    <Border BorderBrush="Black" BorderThickness="1.5" CornerRadius="15" Background="White">
+
+        <StackPanel Name="mainWindow" Focusable="True">
+            <!--Buttons-->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Panel.ZIndex="1">
+                <Button Width="35" Height="35" Background="Transparent" HorizontalAlignment="Right" Margin="0 5 15 0" BorderThickness="0" Name="Minimize" Click="Minimize_Click">
+                    <Image Source="pics/minimize.png"/>
+                </Button>
+                <Button Width="35" Height="35" Background="Transparent" HorizontalAlignment="Right" Margin="0 5 15 0" BorderThickness="0" Name="Close" Click="Close_Click">
+                    <Image Source="pics/close.png"/>
+                </Button>
+            </StackPanel>
+
+            <!--Logo and App Name-->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Image Width="96" Height="96" VerticalAlignment="Center">
+                    <Image.Style>
+                        <Style TargetType="{x:Type Image}">
+                            <Setter Property="Source" Value="pics/heart.png"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Source" Value="pics/heart_blue.png"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Image.Style>
+                </Image>
+                
+                <TextBlock FontSize="60" VerticalAlignment="Center" Margin="10 0 0 5">Blood Bank</TextBlock>
+            </StackPanel>
+
+            <!--Login-->
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Margin="0 15 0 0">
+                <TextBlock HorizontalAlignment="Center" FontSize="24" Margin="0 0 0 7" FontWeight="SemiBold">Welcome, let's get started</TextBlock>
+                <TextBlock FontSize="18" FontWeight="SemiBold">Enter your username and password to sign in</TextBlock>
+
+                <!--Username and Password-->
+                <Label FontSize="15" HorizontalAlignment="Left" Margin="78 15 0 0">Username:</Label>
+                <TextBox FontSize="15" Width="200" Padding="3" Name="Txt" HorizontalAlignment="Center" KeyDown="Box_KeyDown"/>
+
+
+                <Label FontSize="15" HorizontalAlignment="Left"  Margin="79 5 0 0">Password:</Label>
+                <PasswordBox FontSize="15" HorizontalAlignment="Center" Width="200" Padding="3" Name="Pass" KeyDown="Box_KeyDown"/>
+
+                <!--Sign In Button-->
+                <Border BorderBrush="Black" Height="32" Background="#FFFF5454"  Width="100" BorderThickness="3" Margin="0 15 0 0">
+
+                    <Button Content="Sign In" FontSize="18" Background="Transparent" BorderThickness="0" FontWeight="SemiBold" Name="SignIn" Click="SignIn_Click"/>
+
+                    <Border.Style>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="0"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="CornerRadius" Value="3"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Border.Style>
+                </Border>
+            </StackPanel>
+
+            <!--Bottom-->
+            <StackPanel Orientation="Horizontal" Width="650" Margin="0 65 0 0">
+                <TextBlock HorizontalAlignment="Left" FontSize="15" TextDecorations="Underline" Text="About" Name="About" PreviewMouseDown="About_PreviewMouseDown">
+                    <TextBlock.Style>
+                        <Style TargetType="TextBlock">
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Foreground" Value="#FF015DFF"/>
+                                    <Setter Property="Cursor" Value="Hand"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </TextBlock.Style>    
+                </TextBlock>
+                
+                <TextBlock HorizontalAlignment="Right" FontSize="15" Margin="567 0 0 0" FontStyle="Italic">By Cpt</TextBlock>
+            </StackPanel>
+        
+        </StackPanel>
+    </Border>
+</Window>

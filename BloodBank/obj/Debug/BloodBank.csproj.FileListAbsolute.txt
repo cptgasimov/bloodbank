@@ -1,0 +1,17 @@
+C:\Users\Cpt\Documents\materials\BloodBank\BloodBank\bin\Debug\BloodBank.exe.config
+C:\Users\Cpt\Documents\materials\BloodBank\BloodBank\bin\Debug\BloodBank.exe
+C:\Users\Cpt\Documents\materials\BloodBank\BloodBank\bin\Debug\BloodBank.pdb
+C:\Users\Cpt\Documents\materials\BloodBank\BloodBank\obj\Debug\BloodBank.csprojAssemblyReference.cache
+C:\Users\Cpt\Documents\materials\BloodBank\BloodBank\obj\Debug\MainWindow.g.cs
+C:\Users\Cpt\Documents\materials\BloodBank\BloodBank\obj\Debug\App.g.cs
+C:\Users\Cpt\Documents\materials\BloodBank\BloodBank\obj\Debug\BloodBank_MarkupCompile.cache
+C:\Users\Cpt\Documents\materials\BloodBank\BloodBank\obj\Debug\BloodBank_MarkupCompile.lref
+C:\Users\Cpt\Documents\materials\BloodBank\BloodBank\obj\Debug\MainWindow.baml
+C:\Users\Cpt\Documents\materials\BloodBank\BloodBank\obj\Debug\BloodBank.g.resources
+C:\Users\Cpt\Documents\materials\BloodBank\BloodBank\obj\Debug\BloodBank.Properties.Resources.resources
+C:\Users\Cpt\Documents\materials\BloodBank\BloodBank\obj\Debug\BloodBank.csproj.GenerateResource.cache
+C:\Users\Cpt\Documents\materials\BloodBank\BloodBank\obj\Debug\BloodBank.csproj.CoreCompileInputs.cache
+C:\Users\Cpt\Documents\materials\BloodBank\BloodBank\obj\Debug\BloodBank.exe
+C:\Users\Cpt\Documents\materials\BloodBank\BloodBank\obj\Debug\BloodBank.pdb
+C:\Users\Cpt\Documents\materials\BloodBank\BloodBank\obj\Debug\BloodBank_Content.g.cs
+C:\Users\Cpt\Documents\materials\BloodBank\BloodBank\bin\Debug\BloodBank.mdb
